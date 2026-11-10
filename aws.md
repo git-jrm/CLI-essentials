@@ -1,3 +1,5 @@
+[⬅️Home](./README.md)
+
 # AWS
 
 ## ⚙️ AWS CLI instalation (Linux)
@@ -55,7 +57,7 @@ aws dynamodb scan --table-name TableName                     # read whole table
 ```
 
 
-
+[⬅️Home](./README.md)
 
 
 
