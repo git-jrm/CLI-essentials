@@ -8,7 +8,7 @@ Quick-reference cheat sheets for everyday dev tooling, focused on Linux (Ubuntu/
 | 🐳 **Docker** | Engine install, images, containers, compose | [docker.md](docker.md) |
 | ☁️ **AWS CLI** | Install, credentials, S3, DynamoDB | [aws.md](aws.md) |
 | 🟢 **Node.js** | Install, npm, version management | [node.md](node.md) |
-| 💻 **VS Code** | Install, CLI, extensions, shortcuts | [vscode.md](vscode.md) |
+| 💻 **VS Code** | Install, extensions, shortcuts | [vscode.md](vscode.md) |
 
 ## Usage
 
