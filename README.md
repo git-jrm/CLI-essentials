@@ -1,8 +1,20 @@
-# 💯 Essentials commands
+# 💯 Essential Commands
 
-### 🛠️ Git commands: [Git commands](https://github.com/git-jrm/git/blob/main/git.md)
+Quick-reference cheat sheets for everyday dev tooling, focused on Linux (Ubuntu/Debian).
 
-### 🛠️ Docker commands: [Docker commands](https://github.com/git-jrm/git/blob/main/docker.md)
+| Tool | What's inside | Link |
+|------|---------------|------|
+| 🔀 **Git** | SSH keys, global config, daily workflow | [git.md](git.md) |
+| 🐳 **Docker** | Engine install, images, containers, compose | [docker.md](docker.md) |
+| ☁️ **AWS CLI** | Install, credentials, S3, DynamoDB | [aws.md](aws.md) |
 
-### 🛠️ AWS CLI commands: [AWS CLI commands](https://github.com/git-jrm/git/blob/main/aws.md)
+## Usage
 
+Clone the repo and open the cheat sheet you need:
+
+```bash
+git clone https://github.com/git-jrm/git.git
+cd git
+```
+
+Commands marked `old` in `docker.md` still work but have a newer equivalent (`docker image ls`, `docker container ls`, etc.).
