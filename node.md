@@ -1,3 +1,5 @@
+[⬅️Home](./README.md)
+
 # 💯 Essential Node Commands
 
 ## 📁 Install node via fnm: for better performance
@@ -65,7 +67,7 @@ echo 'export PATH=/opt/node/current/bin:$PATH' >> ~/.profile
 ```
 
 
-
+[⬅️Home](./README.md)
 
 
 
