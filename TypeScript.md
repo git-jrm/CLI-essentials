@@ -1,7 +1,26 @@
 # TypeScript
 
-## Typing
+TypeScript is strongly and statically typed. No type mismatches, Compile-time checking and Type inference.
+
+## Typing function
 ```
+function process({ name, age }): { name: string, age: number }): number {
+  console.log('Processed ${name}, ${age} y/o.')
+  return age
+}
+let ageProcessed: number
+ageProcessed = process({ name: 'Bob', age: 40 })
+```
+
+## Typing callback function
+```
+const processFunction = (fn) ==> {
+  fn('Bob')
+}
+
+processFunction((name) ==> {
+  console.log('Process ${name}')
+)
 ```
 
 ## Intersection Type 
