@@ -1,11 +1,15 @@
 # TypeScript
 
+## Typing
+```
+```
+
 ## Intersection Type 
-´´´
-´´´
+```
+```
 
 ## Type Indexing
-´´´
+```
 type PersonProperties = {
   isActive: bolean,
   address: {
@@ -18,17 +22,15 @@ const addressPerson: PersonProperties['address']{
   country: 'Earth',
   city: 'Madrid'
 }
-´´´
+```
 
 ## Type from value
-´´´
-
-´´´
+```
+```
 
 ## Arrays
-´´´
-
-´´´
+```
+```
 
 --
 • Union Types (A | B): Permiten que una variable acepte varios tipos posibles.
