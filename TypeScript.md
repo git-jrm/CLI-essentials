@@ -1,8 +1,24 @@
 # TypeScript
 
-• Intersection Type 
+## Intersection Type 
+´´´
+´´´
 
-• Type indexing
+## Type Indexing
+´´´
+type PersonProperties = {
+  isActive: bolean,
+  address: {
+    country: string,
+    city: string
+  }
+}
+
+const addressPerson: PersonProperties['address']{
+  country: 'Earth',
+  city: 'Madrid'
+}
+´´´
 
 • Union Types (A | B): Permiten que una variable acepte varios tipos posibles.
 
