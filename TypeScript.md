@@ -20,6 +20,17 @@ const addressPerson: PersonProperties['address']{
 }
 ´´´
 
+## Type from value
+´´´
+
+´´´
+
+## Arrays
+´´´
+
+´´´
+
+--
 • Union Types (A | B): Permiten que una variable acepte varios tipos posibles.
 
 • Generics (<T>): Crean componentes y funciones reutilizables que mantienen el tipado dinámico.
