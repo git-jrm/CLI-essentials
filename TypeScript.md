@@ -1,6 +1,6 @@
 # TypeScript
 
-TypeScript is strongly and statically typed. No type mismatches, Compile-time checking and Type inference.
+TypeScript is strongly and statically typed. No type mismatches by compile-time checking and Type inference.
 
 ## Typing function
 ```
@@ -14,13 +14,33 @@ ageProcessed = process({ name: 'Bob', age: 40 })
 
 ## Typing callback function
 ```
-const processFunction = (fn) ==> {
+const processFunction = (fn: (name: string) => string) ==> {
   fn('Bob')
 }
 
-processFunction((name) ==> {
+const function((name) ==> {
   console.log('Process ${name}')
+  return string
 )
+
+let status: string
+status = processFunction(function)
+```
+
+## Typing arrow function
+```
+const processLong: (a: number, b: number) => number = (a, b) => {
+  return a + b;
+};
+
+const processShort = (amount: number, add: number): number => {
+  return amount + add;
+};
+
+type ProcessInput = (amount: number, add: number) => number;
+const execute = (fn: processInput) => fn(100, 20);
+execute(processLong);  // 120
+execute(processShort); // 120
 ```
 
 ## Intersection Type 
