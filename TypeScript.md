@@ -98,7 +98,7 @@ function createClient(client: ClientInput): Client {
   }
 }
 
-const bob = ObjectcreateClient({ name: 'Bob', credit: 10000 })
+const bob = createClient({ name: 'Bob', credit: 10000 })
 ```
 
 ## Type Indexing
