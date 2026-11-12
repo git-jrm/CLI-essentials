@@ -14,11 +14,11 @@ ageProcessed = process({ name: 'Bob', age: 40 })
 
 ## Typing callback function
 ```
-const processFunction = (fn: (name: string) => string) ==> {
+const processFunction = (fn: (name: string) => string) => {
   fn('Bob')
 }
 
-const function((name) ==> {
+const function((name) => {
   console.log('Process ${name}')
   return string
 )
