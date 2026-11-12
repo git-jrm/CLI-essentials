@@ -178,6 +178,17 @@ const board: Board = [
 ]
 ```
 
+## Generics <T>
+```
+function wrapInArray<T>(value: T): T[] {
+  return [value]
+}
+
+const numArr = wrapInArray(10)       // number[]
+const strArr = wrapInArray('Hello')  // string[]
+```
+
+
 --
 obs: falta esto o no?
 • Generics (<T>): Crean componentes y funciones reutilizables que mantienen el tipado dinámico.
