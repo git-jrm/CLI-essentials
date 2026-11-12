@@ -98,7 +98,7 @@ function createClient(client: ClientInput): Client {
   }
 }
 
-const bob = createClient({ name: 'Bob', credit: 10000 })
+const bob = Object.freeze(createClient({ name: 'Bob', credit: 10000 }))
 ```
 
 ## Type Narrowing
@@ -187,6 +187,16 @@ function wrapInArray<T>(value: T): T[] {
 const numArr = wrapInArray(10)       // number[]
 const strArr = wrapInArray('Hello')  // string[]
 ```
+
+## Generics <T>
+```
+type User = { id: string; name: string; age: number }
+
+type UserUpdate = Partial<User>           // Todo opcional
+type UserPreview = Pick<User, 'id' | 'name'> // Solo id y name
+type UserCreate = Omit<User, 'id'>        // Todo menos id
+```
+
 
 
 --
