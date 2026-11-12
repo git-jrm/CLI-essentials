@@ -91,8 +91,7 @@ function createClient(client: Client): Client {
   }
 }
 
-const bob = ObjectcreateClient('Bob', 10000)
-bob.id.toString()
+const bob = ObjectcreateClient({ name: 'Bob', credit: 10000 })
 ```
 
 ## Union Types
