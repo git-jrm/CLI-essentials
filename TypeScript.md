@@ -95,6 +95,11 @@ const bob = ObjectcreateClient('Bob', 10000)
 bob.id.toString()
 ```
 
+## Union Types
+```
+
+```
+
 ## Intersection Type 
 ```
 ```
