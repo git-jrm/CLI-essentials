@@ -67,8 +67,8 @@ const bob = createClient('Bob', 10000)
 
 ## Type alias
 ```
-type IdType = '${string}-${string}-${string}-${string}-${string}'
-type PayMethods = 'debit' | 'credit' | 'cash' | 'account' // --> Union Types
+type IdType = '${string}-${string}-${string}-${string}-${string}' // Template literal types
+type PayMethods = 'debit' | 'credit' | 'cash' | 'transfer' // --> Union Types
 
 type ClientInput = {
   name: string
@@ -168,7 +168,7 @@ const board: Board = [
 ```
 
 --
-
+obs: falta esto o no?
 • Generics (<T>): Crean componentes y funciones reutilizables que mantienen el tipado dinámico.
 
 • Type Narrowing / Type Guards: Refinan un tipo amplio a uno específico mediante validaciones como typeof o instanceof.
