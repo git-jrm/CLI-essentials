@@ -188,7 +188,7 @@ const numArr = wrapInArray(10)       // number[]
 const strArr = wrapInArray('Hello')  // string[]
 ```
 
-## Generics <T>
+## Generics `<T>` 
 ```
 type User = { id: string; name: string; age: number }
 
