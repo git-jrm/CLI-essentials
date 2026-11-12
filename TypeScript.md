@@ -67,21 +67,28 @@ const bob = createClient('Bob', 10000)
 
 ## Type alias
 ```
-type idType = '${string}-${string}-${string}-${string}-${string}'
+type IdType = '${string}-${string}-${string}-${string}-${string}'
+type PayMethods = 'debit' | 'credit' | 'cash' | 'account' // --> Union Types
 
-type Client = {
-  readonly id?: idType
+type ClientInput = {
   name: string
   credit: number
-  isActive?: boolean
 }
+
+type ClientProperties = {
+  readonly id?: IdType
+  isActive?: boolean
+  payMethod?: PayMethods
+}
+
+type Client = ClientInput & ClientProperties // --> Intersection Types
 
 let client: Client = {
   name: 'Bob',
   credit: 10000
 }
 
-function createClient(client: Client): Client {
+function createClient(client: ClientInput): Client {
   const { name, credit} = client
   return {
     id: crypto.randomUUID(),
@@ -92,15 +99,6 @@ function createClient(client: Client): Client {
 }
 
 const bob = ObjectcreateClient({ name: 'Bob', credit: 10000 })
-```
-
-## Union Types
-```
-
-```
-
-## Intersection Type 
-```
 ```
 
 ## Type Indexing
@@ -128,7 +126,6 @@ const addressPerson: PersonProperties['address']{
 ```
 
 --
-• Union Types (A | B): Permiten que una variable acepte varios tipos posibles.
 
 • Generics (<T>): Crean componentes y funciones reutilizables que mantienen el tipado dinámico.
 
@@ -140,5 +137,4 @@ const addressPerson: PersonProperties['address']{
 
 • Mapped Types: Iteran sobre las claves de un tipo existente para crear uno nuevo con propiedades modificadas.
 
-• Inferencia de Tipos (infer): Extrae y captura tipos dinámicamente dentro de un Conditional Type.
 
