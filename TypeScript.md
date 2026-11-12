@@ -43,6 +43,14 @@ execute(processLong);  // 120
 execute(processShort); // 120
 ```
 
+## Function inference
+```
+const cardTypes = ['Mastercard', 'Visa', 'American']
+cardTypes.forEach(function (type) {
+  console.log(type.toUpperCase())
+})
+```
+
 ## Intersection Type 
 ```
 ```
