@@ -38,7 +38,7 @@ const processShort = (amount: number, add: number): number => {
 };
 
 type ProcessInput = (amount: number, add: number) => number;
-const execute = (fn: processInput) => fn(100, 20);
+const execute = (fn: ProcessInput) => fn(100, 20);
 execute(processLong);  // 120
 execute(processShort); // 120
 ```
@@ -67,7 +67,7 @@ const bob = createClient('Bob', 10000)
 
 ## Type alias
 ```
-type IdType = '${string}-${string}-${string}-${string}-${string}' // Template literal types
+type IdType = `${string}-${string}-${string}-${string}-${string}` // Template literal types
 type PayMethods = 'debit' | 'credit' | 'cash' | 'transfer' // --> Union Types
 
 type ClientInput = {
