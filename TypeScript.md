@@ -104,7 +104,7 @@ const bob = ObjectcreateClient({ name: 'Bob', credit: 10000 })
 ## Type Indexing
 ```
 type PersonProperties = {
-  isActive: bolean,
+  isActive: boolean,
   address: {
     country: string,
     city: string
