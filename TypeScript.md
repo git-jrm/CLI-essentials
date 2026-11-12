@@ -112,8 +112,8 @@ type PersonProperties = {
 }
 
 const addressPerson: PersonProperties['address']{
-  country: 'Earth',
-  city: 'Madrid'
+  country: 'USA',
+  city: 'NY'
 }
 ```
 
