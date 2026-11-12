@@ -8,23 +8,23 @@ function process({ name, age }): { name: string, age: number }): number {
   console.log('Processed ${name}, ${age} y/o.')
   return age
 }
+
 let ageProcessed: number
+
 ageProcessed = process({ name: 'Bob', age: 40 })
 ```
 
 ## Typing callback function
 ```
-const processFunction = (fn: (name: string) => string) => {
+const execFunction = (fn: (name: string) => void): void => {
   fn('Bob')
 }
 
-const function((name) => {
-  console.log('Process ${name}')
-  return string
-)
+const processFunction = (name: string): void => {
+  console.log(`Process ${name}`)
+}
 
-let status: string
-status = processFunction(function)
+execFunction(processFunction)
 ```
 
 ## Typing arrow function
