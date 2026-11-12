@@ -132,8 +132,21 @@ const addressEurope: Address = {
 }
 ```
 
+## Type from value
+```
+function createAddress() {
+  return {
+    country: 'Spain',
+    city: 'BCN'
+  }
+}
+
+type Address = ReturnType<typeof createAddress>
+```
+
 ## Arrays
 ```
+
 ```
 
 --
