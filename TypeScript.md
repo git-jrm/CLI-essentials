@@ -57,10 +57,34 @@ let client = {
   name: 'Bob',
   credit: 10000
 }
+
 function createClient(name: string, credit: number){
   return { name, credit}
 }
+
 const bob = createClient('Bob', 10000)
+```
+
+## Type alias
+```
+type Client = {
+  name: string
+  credit: number
+  isActive?: boolean
+}
+
+let client: Client = {
+  name: 'Bob',
+  credit: 10000
+}
+
+function createClient(client: Client): Client {
+  const { name, credit} = client
+  return { name, credit, isActive: true }
+}
+
+const bob = createClient('Bob', 10000)
+console.log(bob.isActive) // --> true
 ```
 
 ## Intersection Type 
