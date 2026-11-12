@@ -160,7 +160,7 @@ type Board = [
   [CellValue, CellValue, CellValue]
 ]
 
-const board = [
+const board: Board = [
   ['X','O','X'],
   ['X','O','O'],
   ['O','','X']
