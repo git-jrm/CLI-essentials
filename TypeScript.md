@@ -146,6 +146,13 @@ type Address = ReturnType<typeof createAddress>
 
 ## Arrays
 ```
+const languages: (string | number)[] = []
+
+languages.push('EN')
+languages.push('ES')
+languages.push('FR')
+languages.push('PT')
+
 
 ```
 
