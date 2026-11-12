@@ -119,12 +119,17 @@ const addressPerson: PersonProperties['address']{
 
 ## Type from value
 ```
-const address = {
+const addressAmericas = {
   country: 'USA',
   city: 'NY'
 }
 
-type Adress = typeof address
+type Address = typeof address
+
+const addressEurope: Address = {
+  country: 'Spain',
+  city: 'BCN'
+}
 ```
 
 ## Arrays
