@@ -53,7 +53,14 @@ cardTypes.forEach(function (type) {
 
 ## Objects
 ```
-
+let client = {
+  name: 'Bob',
+  credit: 10000
+}
+function createClient(name: string, credit: number){
+  return { name, credit}
+}
+const bob = createClient('Bob', 10000)
 ```
 
 ## Intersection Type 
