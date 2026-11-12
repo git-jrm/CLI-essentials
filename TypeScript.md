@@ -51,6 +51,11 @@ cardTypes.forEach(function (type) {
 })
 ```
 
+## Objects
+```
+
+```
+
 ## Intersection Type 
 ```
 ```
