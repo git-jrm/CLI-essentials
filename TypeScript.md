@@ -101,6 +101,17 @@ function createClient(client: ClientInput): Client {
 const bob = createClient({ name: 'Bob', credit: 10000 })
 ```
 
+## Type Narrowing
+```
+function printId(id: string | number) {
+  if (typeof id === 'string') {
+    console.log(id.toUpperCase()) // TS sabe que aquí es string
+  } else {
+    console.log(id.toFixed(2))    // TS sabe que aquí es number
+  }
+}
+```
+
 ## Type Indexing
 ```
 type PersonProperties = {
