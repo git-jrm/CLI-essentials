@@ -132,7 +132,7 @@ const addressEurope: Address = {
 }
 ```
 
-## Type from value
+## Type from function return
 ```
 function createAddress() {
   return {
