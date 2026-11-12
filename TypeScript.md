@@ -67,7 +67,10 @@ const bob = createClient('Bob', 10000)
 
 ## Type alias
 ```
+type idType = '${string}-${string}-${string}-${string}-${string}'
+
 type Client = {
+  readonly id?: idType
   name: string
   credit: number
   isActive?: boolean
@@ -80,11 +83,16 @@ let client: Client = {
 
 function createClient(client: Client): Client {
   const { name, credit} = client
-  return { name, credit, isActive: true }
+  return {
+    id: crypto.randomUUID(),
+    name,
+    credit,
+    isActive: true
+  }
 }
 
-const bob = createClient('Bob', 10000)
-console.log(bob.isActive) // --> true
+const bob = ObjectcreateClient('Bob', 10000)
+bob.id.toString()
 ```
 
 ## Intersection Type 
